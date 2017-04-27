@@ -39,7 +39,7 @@
 <body>
   <div class="blog-header">
 		<div class="topic">
-			<a href="ResumeGen.html"><h1>Resume Generator</h1></a>
+			<a href="index.html"><h1>Resume Generator</h1></a>
 		</div>
 	</div>
 

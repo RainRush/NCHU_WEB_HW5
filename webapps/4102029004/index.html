@@ -1,0 +1,85 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="ResumeGen.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>JSP Resume Generator</title>
+</head>
+<body>
+	<div class="blog-header">
+		<div class="topic">
+			<a href="index.html"><h1>Resume Generator</h1></a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+					<form action="ResumeGen.jsp" method="post" name="actForm">
+						<div class="inForm">
+							<h2>Basic Information</h2>
+							<hr>
+								<div class="form-group">
+									<b>Name：</b><input name="Name" type="text"><br>
+								</div>
+								<b>Gender:</b>
+								<label class="radio-inline"><input type="radio" name="Gender" value="Male" checked>Male</label>
+								<label class="radio-inline"><input type="radio" name="Gender" value="Female">Female</label>
+								<br><br>
+								<div class="form-group">
+									<b>Height：</b><input name="Height" type="text"><br>
+								</div>
+								<div class="form-group">
+									<b>Weight：</b><input name="Weight" type="text"><br>
+								</div>
+
+								<div class="form-group">
+								  <label>Birth Year:</label>
+								  <select name="BirthYear" class="form-control col-md-2">
+								    <option>1995</option>
+										<option>1994</option>
+										<option>1993</option>
+										<option>1992</option>
+										<option>1991</option>
+										<option>1990</option>
+								  </select>
+									<br>
+								</div>
+						</div>
+
+						<div class="inForm">
+							<h2>Further Information</h2>
+							<hr>
+								<div class="form-group">
+								  <label for="exp">Experience Field (Allowed to choose more than one by pressing CTRL!):</label>
+								  <select multiple class="form-control" id="exp" name="ExpField">
+								    <option>Front-End</option>
+								    <option>Back-End</option>
+								    <option>System Analysis</option>
+								    <option>UI / UX</option>
+								  </select>
+								</div>
+									<label for="skills">Skills:</label><br>
+									<label class="checkbox-inline"><input type="checkbox" name="PHP">PHP</label>
+									<label class="checkbox-inline"><input type="checkbox" name="ASP">ASP</label>
+									<label class="checkbox-inline"><input type="checkbox" name="JSP">JSP</label>
+									<label class="checkbox-inline"><input type="checkbox" name="NodeJS">NodeJS</label>
+									<label class="checkbox-inline"><input type="checkbox" name="React">React</label>
+									<label class="checkbox-inline"><input type="checkbox" name="SQL">SQL</label>
+									<label class="checkbox-inline"><input type="checkbox" name="GoogleAnalysis">Google Analysis</label>
+								<br><br>
+								<div class="form-group">
+								  <label for="coveringLetter">Covering Letter:</label>
+								  <textarea class="form-control" rows="5" id="coveringLetter" name="CoverLetter"></textarea>
+								</div>
+						</div>
+						<div class="inForm" style="text-align:center">
+							<input type="submit" class="btn btn-primary" value="Submit">
+						</div>
+					</form>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+</body>
+</html>

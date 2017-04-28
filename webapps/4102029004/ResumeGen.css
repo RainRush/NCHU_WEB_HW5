@@ -1,0 +1,41 @@
+html, body {
+    font-family: 'Microsoft JhengHei', arial, sans-serif;
+}
+
+.blog-header {
+    height: 300px;
+    width: 100%;
+    background: url("writing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 65%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    margin-bottom: 20px;
+}
+
+.inForm {
+  padding-bottom: 10px;
+}
+
+.topic h1 {
+  color: gray;
+  font-size: 40pt;
+  font-family: 'Helvatica', arial, sans-serif;
+}
+
+.topic {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  opacity: 0.5;
+  width: 50%;
+}
+
+#resTable {
+  word-wrap:break-word;
+  table-layout: fixed;
+}

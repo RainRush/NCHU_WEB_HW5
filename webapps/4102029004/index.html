@@ -20,17 +20,21 @@
 							<h2>Basic Information</h2>
 							<hr>
 								<div class="form-group">
-									<b>Name：</b><input name="Name" type="text"><br>
+									<b>Name：</b><input name="Name" type="text" required><br>
 								</div>
 								<b>Gender:</b>
 								<label class="radio-inline"><input type="radio" name="Gender" value="Male" checked>Male</label>
 								<label class="radio-inline"><input type="radio" name="Gender" value="Female">Female</label>
 								<br><br>
 								<div class="form-group">
-									<b>Height：</b><input name="Height" type="text"><br>
+									<b>Height：</b><input name="Height" type="text" id="height" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+									Must be a number!
+									<br>
 								</div>
 								<div class="form-group">
-									<b>Weight：</b><input name="Weight" type="text"><br>
+									<b>Weight：</b><input name="Weight" type="text" id="weight" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+									Must be a number!
+									<br>
 								</div>
 
 								<div class="form-group">
@@ -52,11 +56,12 @@
 							<hr>
 								<div class="form-group">
 								  <label for="exp">Experience Field (Allowed to choose more than one by pressing CTRL!):</label>
-								  <select multiple class="form-control" id="exp" name="ExpField">
+								  <select multiple class="form-control" id="exp" name="ExpField" size="5" required>
 								    <option>Front-End</option>
 								    <option>Back-End</option>
 								    <option>System Analysis</option>
 								    <option>UI / UX</option>
+										<option>None</option>
 								  </select>
 								</div>
 									<label for="skills">Skills:</label><br>

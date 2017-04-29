@@ -7,8 +7,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <%
-  request.setCharacterEncoding("utf8");
-
   //Name & Gender
 	String name = request.getParameter("Name");
   String gender = request.getParameter("Gender");
